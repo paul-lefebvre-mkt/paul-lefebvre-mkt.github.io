@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paul Lefebvre — Portfolio</title>
+<meta name="description" content="Portfolio de Paul Lefebvre — marketing digital, acquisition et relation client. Diplômé du Master Marketing Direct & Digital de l'IAE de Lille. Ouvert à l'international, dont VIE.">
+<meta name="author" content="Paul Lefebvre">
+<meta name="publisher" content="Paul Lefebvre">
+<meta name="keywords" content="Paul Lefebvre, portfolio, marketing digital, marketing direct, relation client, e-commerce, SEO, IAE Lille">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://paul-lefebvre-mkt.github.io/">
+
+<!-- Open Graph : aperçu lors du partage (LinkedIn, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Paul Lefebvre — Portfolio">
+<meta property="og:description" content="Marketing digital, acquisition et relation client. Diplômé du Master Marketing Direct & Digital de l'IAE de Lille. Ouvert à l'international, dont VIE.">
+<meta property="og:url" content="https://paul-lefebvre-mkt.github.io/">
+<meta property="og:locale" content="fr_FR">
+<!-- Quand ta photo sera en ligne, on ajoutera ici : <meta property="og:image" content="URL de l'image"> -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,6 +79,22 @@
     color:var(--brume); text-transform:uppercase; margin-bottom:1.6rem;
   }
   .hero-desc{ font-size:1.15rem; max-width:46ch; color:#2E3133; }
+  .dispo{
+    display:inline-flex; align-items:center; gap:.7rem; margin-top:1.8rem;
+    font-family:var(--mono); font-size:.8rem; letter-spacing:.06em;
+    color:var(--accent); background:var(--accent-clair);
+    border:1px solid #CBE0DB; border-radius:100px; padding:.6rem 1.2rem;
+  }
+  .dispo .point{
+    width:9px; height:9px; border-radius:50%; background:var(--accent);
+    box-shadow:0 0 0 0 rgba(14,107,92,.5); animation:pulse 2.4s infinite;
+  }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(14,107,92,.45); }
+    70%{ box-shadow:0 0 0 8px rgba(14,107,92,0); }
+    100%{ box-shadow:0 0 0 0 rgba(14,107,92,0); }
+  }
+  @media (prefers-reduced-motion:reduce){ .dispo .point{ animation:none; } }
 
   .photo{
     position:relative; aspect-ratio:4/5; border-radius:6px;
@@ -209,10 +239,14 @@
         </h1>
         <p class="hero-role reveal d3">Marketing digital · Relation client</p>
         <p class="hero-desc reveal d3">
-          Étudiant en Master 2 Marketing Direct &amp; Digital à l'IAE de Lille.
+          Diplômé du Master Marketing Direct &amp; Digital de l'IAE de Lille.
           Je conçois et pilote des dispositifs d'acquisition et de relation client,
           avec un goût pour le concret et les résultats qui se mesurent.
         </p>
+        <div class="dispo reveal d3">
+          <span class="point"></span>
+          Disponible · Ouvert à l'international, dont VIE
+        </div>
       </div>
       <div class="photo reveal d4">
         <div class="photo-mono">PL</div>
